@@ -1,0 +1,30 @@
+.blog__container {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) { /* Adjust breakpoint as needed */
+
+  .blog__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+      grid-gap: 20px; /* Adjust as needed */
+  }
+
+  .article__main {
+      grid-column: 1 / span 2; /* The featured post spans two columns */
+  }
+
+  .articles__others {
+      grid-column: 1 / span 2; /* The post list spans two columns */
+  }
+
+  .sidebar {
+      grid-column: 3; /* The sidebar is in the third column */
+  }
+}
