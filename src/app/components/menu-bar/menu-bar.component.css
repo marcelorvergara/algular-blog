@@ -1,0 +1,15 @@
+.container__menu-bar > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__menu-bar > ul>  li {
+  margin: 30px auto 10px;
+  list-style: none;
+  font-family: Verdana, 'Segoe UI', Tahoma, Geneva, sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
